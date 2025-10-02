@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gizlilik Politikası - MotorcycleAds</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 40px 30px;
+        }
+
+        .last-updated {
+            background: #f8f9fa;
+            padding: 15px 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            color: #667eea;
+            font-size: 24px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        .section h3 {
+            color: #764ba2;
+            font-size: 20px;
+            margin: 25px 0 15px 0;
+        }
+
+        .section p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .section ul, .section ol {
+            margin-left: 30px;
+            margin-bottom: 15px;
+        }
+
+        .section li {
+            margin-bottom: 10px;
+        }
+
+        .highlight-box {
+            background: #e3f2fd;
+            border-left: 4px solid #2196f3;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .highlight-box h4 {
+            color: #1976d2;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .data-table thead {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .data-table th,
+        .data-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+
+        .data-table th {
+            font-weight: 600;
+        }
+
+        .data-table tbody tr:hover {
+            background: #f8f9fa;
+        }
+
+        .contact-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .contact-box h3 {
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        .contact-box a {
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 12px 25px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            display: inline-block;
+            margin: 5px;
+            transition: all 0.3s;
+        }
+
+        .contact-box a:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .footer {
+            background: #f8f9fa;
+            padding: 30px;
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .footer a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            .header {
+                padding: 30px 20px;
+            }
+
+            .header h1 {
+                font-size: 24px;
+            }
+
+            .content {
+                padding: 30px 20px;
+            }
+
+            .section h2 {
+                font-size: 20px;
+            }
+
+            .data-table {
+                font-size: 14px;
+            }
+
+            .data-table th,
+            .data-table td {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔒 Gizlilik Politikası</h1>
+            <p>MotorcycleAds - Motor Alım-Satım Platformu</p>
+        </div>
+
+        <div class="content">
+            <div class="last-updated">
+                <strong>Son Güncelleme:</strong> 2 Ekim 2024
+            </div>
+
+            <div class="section">
+                <h2>1. Giriş</h2>
+                <p>
+                    MotorcycleAds ("biz", "bizim" veya "uygulama") olarak, kullanıcılarımızın gizliliğini korumayı ve kişisel verilerini güvenli bir şekilde işlemeyi taahhüt ediyoruz. Bu Gizlilik Politikası, MotorcycleAds mobil uygulamasını kullanırken kişisel verilerinizin nasıl toplandığını, kullanıldığını, saklandığını ve korunduğunu açıklamaktadır.
+                </p>
+                <p>
+                    Bu politika, 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) ve Avrupa Birliği Genel Veri Koruma Yönetmeliği (GDPR) hükümlerine uygun olarak hazırlanmıştır.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>2. Veri Sorumlusu</h2>
+                <p><strong>Uygulama Adı:</strong> MotorcycleAds</p>
+                <p><strong>İletişim:</strong> nizamozcan@gmail.com</p>
+                <p><strong>Uygulama Türü:</strong> Motor alım-satım platformu</p>
+            </div>
+
+            <div class="section">
+                <h2>3. Toplanan Kişisel Veriler</h2>
+                <p>Uygulamamız aşağıdaki kişisel verileri toplamaktadır:</p>
+
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Veri Türü</th>
+                            <th>Açıklama</th>
+                            <th>Toplama Amacı</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Email Adresi</strong></td>
+                            <td>Hesap oluşturma ve giriş için</td>
+                            <td>Kimlik doğrulama, hesap yönetimi</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Ad Soyad</strong></td>
+                            <td>Profil bilgisi</td>
+                            <td>İlan sahipliği gösterimi, iletişim</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Telefon Numarası</strong></td>
+                            <td>İletişim bilgisi (isteğe bağlı)</td>
+                            <td>İlan sahipleri ile iletişim</td>
+                        </tr>
+                        <tr>
+                            <td><strong>İlan Bilgileri</strong></td>
+                            <td>Motor ilanı detayları (başlık, açıklama, fiyat, vb.)</td>
+                            <td>İlan yayınlama ve gösterim</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Fotoğraflar</strong></td>
+                            <td>İlan görselleri (5 MB sınırı)</td>
+                            <td>İlan görsel içeriği</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Favori İlanlar</strong></td>
+                            <td>Kullanıcının favorilere eklediği ilanlar</td>
+                            <td>Kullanıcı deneyimi iyileştirme</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Raporlar</strong></td>
+                            <td>İçerik şikayetleri</td>
+                            <td>Platform güvenliği ve moderasyon</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="section">
+                <h2>4. Verilerin Kullanım Amaçları</h2>
+                <p>Topladığımız kişisel veriler aşağıdaki amaçlarla kullanılmaktadır:</p>
+                <ul>
+                    <li><strong>Hesap Yönetimi:</strong> Kullanıcı hesabı oluşturma, kimlik doğrulama ve profil yönetimi</li>
+                    <li><strong>İlan Yönetimi:</strong> Motor ilanlarının yayınlanması, düzenlenmesi ve gösterimi</li>
+                    <li><strong>İletişim:</strong> Kullanıcılar arasında iletişim sağlanması (telefon numarası paylaşımı)</li>
+                    <li><strong>Platform Güvenliği:</strong> Uygunsuz içeriklerin tespiti ve moderasyonu</li>
+                    <li><strong>Kullanıcı Deneyimi:</strong> Favori ilanlar gibi özelliklerin sağlanması</li>
+                    <li><strong>Hukuki Yükümlülükler:</strong> Yasal gereksinimlerin yerine getirilmesi</li>
+                    <li><strong>Güvenlik:</strong> Suistimal ve dolandırıcılık önleme</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>5. Verilerin Saklanması ve Güvenliği</h2>
+
+                <h3>5.1 Veri Saklama</h3>
+                <p>Kişisel verileriniz <strong>Supabase</strong> (açık kaynak backend platformu) üzerinde güvenli bir şekilde saklanmaktadır. Supabase, verileri şifreli PostgreSQL veritabanlarında barındırır.</p>
+
+                <h3>5.2 Güvenlik Önlemleri</h3>
+                <ul>
+                    <li>✅ <strong>Şifreleme:</strong> Tüm veriler şifreli olarak saklanır</li>
+                    <li>✅ <strong>HTTPS:</strong> Tüm veri transferleri SSL/TLS ile şifrelenir</li>
+                    <li>✅ <strong>Erişim Kontrolü:</strong> Row Level Security (RLS) politikaları ile kullanıcılar sadece kendi verilerine erişebilir</li>
+                    <li>✅ <strong>Güvenli Kimlik Doğrulama:</strong> Şifreler hash'lenerek saklanır</li>
+                    <li>✅ <strong>Otomatik Yedekleme:</strong> Veriler düzenli olarak yedeklenir</li>
+                </ul>
+
+                <h3>5.3 Saklama Süresi</h3>
+                <p>Kişisel verileriniz, hesabınızı silene kadar saklanır. Hesap silme işlemi gerçekleştiğinde tüm verileriniz kalıcı olarak silinir.</p>
+            </div>
+
+            <div class="section">
+                <h2>6. Verilerin Paylaşımı</h2>
+
+                <div class="highlight-box">
+                    <h4>🔒 Önemli: Verileriniz Satılmaz veya Kiralanmaz!</h4>
+                    <p>Kişisel verileriniz <strong>kesinlikle</strong> üçüncü taraflarla satılmaz, kiralanmaz veya pazarlama amaçlı paylaşılmaz.</p>
+                </div>
+
+                <h3>6.1 Uygulama İçinde Paylaşım</h3>
+                <p>Aşağıdaki bilgileriniz diğer kullanıcılarla <strong>sadece ilan yayınladığınızda</strong> paylaşılır:</p>
+                <ul>
+                    <li>Ad Soyad (ilan sahibi olarak)</li>
+                    <li>Telefon numarası (eğer profilde eklediyseniz)</li>
+                    <li>İlan bilgileri ve fotoğrafları</li>
+                </ul>
+
+                <h3>6.2 Hizmet Sağlayıcılar</h3>
+                <p>Uygulamanın çalışması için kullanılan üçüncü taraf hizmetler:</p>
+                <ul>
+                    <li><strong>Supabase:</strong> Veritabanı ve kimlik doğrulama (GDPR uyumlu)</li>
+                    <li><strong>Google Play Services:</strong> Uygulama dağıtımı</li>
+                </ul>
+
+                <h3>6.3 Yasal Yükümlülükler</h3>
+                <p>Aşağıdaki durumlarda verileriniz yetkili makamlarla paylaşılabilir:</p>
+                <ul>
+                    <li>Mahkeme kararı veya yasal zorunluluk</li>
+                    <li>Dolandırıcılık veya suç faaliyetlerinin tespiti</li>
+                    <li>Platform güvenliğinin sağlanması</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>7. Kullanıcı Hakları (KVKK ve GDPR)</h2>
+                <p>Kişisel verileriniz ile ilgili aşağıdaki haklara sahipsiniz:</p>
+
+                <div class="highlight-box">
+                    <h4>📋 KVKK ve GDPR Kapsamındaki Haklarınız</h4>
+                    <ul style="margin-left: 20px;">
+                        <li><strong>Bilgi Talep Etme:</strong> Hangi verilerinizin işlendiğini öğrenme</li>
+                        <li><strong>Erişim Hakkı:</strong> Kişisel verilerinize erişme ve kopyasını alma</li>
+                        <li><strong>Düzeltme Hakkı:</strong> Yanlış veya eksik verilerin düzeltilmesini talep etme</li>
+                        <li><strong>Silme Hakkı:</strong> Verilerinizin silinmesini talep etme ("unutulma hakkı")</li>
+                        <li><strong>İtiraz Hakkı:</strong> Veri işleme faaliyetlerine itiraz etme</li>
+                        <li><strong>Veri Taşınabilirliği:</strong> Verilerinizi yapılandırılmış formatta alma</li>
+                    </ul>
+                </div>
+
+                <h3>7.1 Hesap Silme</h3>
+                <p>Hesabınızı ve tüm verilerinizi kalıcı olarak silmek için:</p>
+                <ul>
+                    <li><strong>Uygulama içinden:</strong> Profil → Hesabı Sil</li>
+                    <li><strong>Email ile:</strong> <a href="mailto:nizamozcan@gmail.com">nizamozcan@gmail.com</a></li>
+                </ul>
+                <p>Detaylı bilgi: <a href="https://nizamozcan.github.io/MotorcycleAds/account-deletion.html" target="_blank">Hesap Silme Rehberi</a></p>
+            </div>
+
+            <div class="section">
+                <h2>8. Çerezler ve İzleme Teknolojileri</h2>
+                <p>Uygulamamız <strong>minimal düzeyde</strong> veri toplar:</p>
+                <ul>
+                    <li>✅ <strong>Oturum Yönetimi:</strong> Giriş durumunuzu hatırlamak için (AsyncStorage)</li>
+                    <li>✅ <strong>Tercihler:</strong> Uygulama ayarlarınızı kaydetmek için</li>
+                    <li>❌ <strong>Reklam İzleyicileri:</strong> Kullanılmaz</li>
+                    <li>❌ <strong>Analitik Araçları:</strong> Google Analytics gibi araçlar kullanılmaz</li>
+                    <li>❌ <strong>Üçüncü Taraf İzleyiciler:</strong> Kullanılmaz</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>9. Çocukların Gizliliği</h2>
+                <p>
+                    MotorcycleAds uygulaması <strong>18 yaş altı kullanıcılar için tasarlanmamıştır</strong>. Bilerek 18 yaş altı kullanıcılardan veri toplamıyoruz. Eğer 18 yaş altı bir kullanıcının veri sağladığını fark edersek, derhal sileriz.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>10. Uluslararası Veri Transferi</h2>
+                <p>
+                    Verileriniz Supabase altyapısı üzerinde saklanmaktadır. Supabase, verileri Avrupa Birliği bölgesinde veya GDPR uyumlu veri merkezlerinde barındırır. Türkiye dışına veri transferi olması durumunda, uygun güvenlik önlemleri alınır.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>11. Politika Değişiklikleri</h2>
+                <p>
+                    Bu Gizlilik Politikası zaman zaman güncellenebilir. Önemli değişiklikler olması durumunda:
+                </p>
+                <ul>
+                    <li>📧 Email ile bildirim gönderilir</li>
+                    <li>📱 Uygulama içi bildirim yapılır</li>
+                    <li>🔄 Bu sayfada "Son Güncelleme" tarihi değiştirilir</li>
+                </ul>
+                <p>
+                    Güncellemeden sonra uygulamayı kullanmaya devam etmeniz, yeni politikayı kabul ettiğiniz anlamına gelir.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>12. Güvenlik İhlalleri</h2>
+                <p>
+                    Herhangi bir güvenlik ihlali durumunda:
+                </p>
+                <ul>
+                    <li>🚨 Etkilenen kullanıcılar <strong>72 saat içinde</strong> bilgilendirilir</li>
+                    <li>📋 İhlal detayları ve alınan önlemler paylaşılır</li>
+                    <li>⚖️ Yetkili makamlara gerekli bildirimler yapılır (KVKK/GDPR)</li>
+                </ul>
+            </div>
+
+            <div class="contact-box">
+                <h3>📞 İletişim ve Sorularınız</h3>
+                <p>Gizlilik politikamız veya kişisel verileriniz hakkında sorularınız için:</p>
+                <a href="mailto:nizamozcan@gmail.com">📧 nizamozcan@gmail.com</a>
+                <p style="margin-top: 20px; font-size: 14px; opacity: 0.9;">
+                    Talepleriniz en geç <strong>30 gün</strong> içinde yanıtlanacaktır (KVKK md. 13).
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>13. Yasal Dayanak</h2>
+                <p>Bu Gizlilik Politikası aşağıdaki mevzuatlara uygun olarak hazırlanmıştır:</p>
+                <ul>
+                    <li>🇹🇷 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK)</li>
+                    <li>🇪🇺 General Data Protection Regulation (GDPR)</li>
+                    <li>📱 Google Play Store Veri Güvenliği Politikası</li>
+                    <li>📋 Elektronik Ticaretin Düzenlenmesi Hakkında Kanun</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p><strong>MotorcycleAds</strong></p>
+            <p>Motor Alım-Satım Platformu</p>
+            <p style="margin-top: 15px;">
+                <a href="account-deletion.html">Hesap Silme</a> |
+                <a href="privacy-policy.html">Gizlilik Politikası</a>
+            </p>
+            <p style="margin-top: 15px;">© 2024 Tüm hakları saklıdır.</p>
+        </div>
+    </div>
+</body>
+</html>
